@@ -1,0 +1,171 @@
+.doctor-list-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.search-section {
+  margin-bottom: 24px;
+}
+
+.content-section {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.filter-section {
+  width: 280px;
+  flex-shrink: 0;
+}
+
+.doctor-cards {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.doctor-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.doctor-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.doctor-info {
+  flex-grow: 1;
+}
+
+.doctor-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 4px;
+}
+
+.doctor-specialty {
+  color: #666;
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+
+.doctor-qualification {
+  color: #666;
+  font-size: 14px;
+  margin: 0 0 4px;
+}
+
+.doctor-experience {
+  color: #666;
+  font-size: 14px;
+  margin: 0 0 12px;
+}
+
+.clinic-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #666;
+  font-size: 14px;
+}
+
+.clinic-info svg {
+  color: #666;
+}
+
+.fee-info {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-weight: 600;
+  color: #333;
+  font-size: 16px;
+}
+
+.book-appointment {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  border: 1px solid #0063b2;
+  color: #0063b2;
+  padding: 8px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.book-appointment:hover {
+  background: #0063b2;
+  color: white;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 16px;
+  color: #666;
+}
+
+.error {
+  text-align: center;
+  padding: 40px;
+  color: #d32f2f;
+  font-size: 16px;
+}
+
+.no-doctors {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .doctor-list-container {
+    padding: 0 10px;
+  }
+
+  .content-section {
+    flex-direction: column;
+  }
+
+  .filter-section {
+    width: 100%;
+  }
+
+  .doctor-card {
+    flex-direction: column;
+  }
+
+  .doctor-info {
+    padding-right: 0;
+  }
+
+  .fee-info {
+    position: static;
+    margin-top: 8px;
+  }
+
+  .book-appointment {
+    position: static;
+    width: 100%;
+    margin-top: 16px;
+  }
+}
